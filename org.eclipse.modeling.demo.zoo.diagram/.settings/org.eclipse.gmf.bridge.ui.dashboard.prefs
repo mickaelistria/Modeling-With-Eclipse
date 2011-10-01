@@ -1,0 +1,8 @@
+#Fri Sep 30 12:38:54 CEST 2011
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/org.eclipse.modeling.demo.zoo/model/zoo.genmodel
+gmf_dashboard/domainModel=platform\:/resource/org.eclipse.modeling.demo.zoo/model/zoo.ecore
+gmf_dashboard/generationModel=platform\:/resource/org.eclipse.modeling.demo.zoo.diagram/model/zoo.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/org.eclipse.modeling.demo.zoo/model/zoo.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/org.eclipse.modeling.demo.zoo.diagram/model/zoo.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/org.eclipse.modeling.demo.zoo/model/zoo.gmftool

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.modeling.demo.zoo/src"
+    modelPluginID="org.eclipse.modeling.demo.zoo" modelName="Zoo" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>zoo.ecore</foreignModel>
+  <genPackages prefix="Zoo" basePackage="org.eclipse.modeling.demo" disposableProviderFactory="true"
+      ecorePackage="zoo.ecore#/">
+    <genClasses ecoreClass="zoo.ecore#//Zoo">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference zoo.ecore#//Zoo/plots"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="zoo.ecore#//Ground"/>
+    <genClasses ecoreClass="zoo.ecore#//Savannah">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference zoo.ecore#//Savannah/tigers"/>
+    </genClasses>
+    <genClasses ecoreClass="zoo.ecore#//Water">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference zoo.ecore#//Water/fishes"/>
+    </genClasses>
+    <genClasses ecoreClass="zoo.ecore#//Walkway">
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference zoo.ecore#//Walkway/visitors"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="zoo.ecore#//Animal">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute zoo.ecore#//Animal/name"/>
+    </genClasses>
+    <genClasses ecoreClass="zoo.ecore#//Visitor"/>
+    <genClasses ecoreClass="zoo.ecore#//Tiger"/>
+    <genClasses ecoreClass="zoo.ecore#//Fish"/>
+  </genPackages>
+</genmodel:GenModel>

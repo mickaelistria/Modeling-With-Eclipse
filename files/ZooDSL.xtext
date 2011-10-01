@@ -1,0 +1,35 @@
+grammar org.eclipse.modeling.demo.zoo.ZooDSL with org.eclipse.xtext.common.Terminals
+
+import "platform:/resource/org.eclipse.modeling.demo.zoo/model/zoo.ecore"
+
+Zoo : {Zoo}
+	"In my zoo there is" plots+=Plot*
+;
+
+Plot returns Ground:
+	Water | Savannah | Walkway
+;
+
+Water : {Water}
+	"A plot with the following fishes:" fishes+=Fish*
+;
+
+Savannah : {Savannah}
+	"A savannah with the following tiger:" tigers+=Tiger*
+;
+
+Walkway : {Walkway}
+	"A walkway with the following visitors:" visitors+=Visitor* 
+;
+
+Fish returns Fish: {Fish}
+	name=ID
+;
+
+Tiger : {Tiger}
+	name=ID	
+;
+
+Visitor : {Visitor}
+	name=ID
+;

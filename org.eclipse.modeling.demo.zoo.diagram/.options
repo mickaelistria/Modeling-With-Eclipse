@@ -1,0 +1,7 @@
+# Tracing options for the org.eclipse.modeling.demo.zoo.diagram plug-in
+
+# Common issues
+org.eclipse.modeling.demo.zoo.diagram/debug=false
+
+# Visual IDs
+org.eclipse.modeling.demo.zoo.diagram/debug/visualID=false
